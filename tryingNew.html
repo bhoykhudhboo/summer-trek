@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Summer Trek </title>
+    <script src="https://kit.fontawesome.com/a6e2755b4d.js" crossorigin="anonymous">
+    </script>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- css -->
+<link rel="stylesheet" href="css/tooplate-style.css">
+<style>
+    /* css reset */
+    body {
+        font-family: 'Baloo 2', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url('bg.jpg');
+        background-repeat: repeat-x;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: -8px;
+        /* border: 2px solid green; */
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: honeydew;
+        text-decoration: none;
+        padding: 34px 23px;
+
+    }
+
+    .left {
+        /* border: 2px solid green; */
+        background-color: black;
+        width: 100%;
+        height: 9%;
+        display: inline-block;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    .left img {
+        width: 100px;
+    }
+    .content {
+        color: rgb(8, 0, 0);
+        margin: 200px 300px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    /* mid content */
+    .container {
+        border: 2px solid wheat;
+        margin: 250px 300px;
+        padding: 50px;
+        width: 60%;
+        border-radius: 20px;
+    }
+
+    .container p {
+        font-size: 30px;
+        color: rgb(131, 18, 18);
+
+    }
+
+    /* experiences */
+    .row {
+        color: rgb(8, 0, 0);
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .reviews {
+        column-count: 4;
+        column-gap: 30px;
+    }
+
+    .reviews h2 {
+        column-span: all;
+    }
+
+    /* picture */
+    * {
+        box-sizing: border-box;
+    }
+
+    .pics {
+        position: relative;
+        width: 100%;
+        max-width: 1500px;
+        column-count: 3;
+        column-gap: 30px;
+        cursor: pointer;
+    }
+
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .overlay {
+        position: relative;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5);
+        /* Black see-through */
+        color: #f1f1f1;
+        width: 100%;
+        transition: .5s ease;
+        opacity: 0;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .pics:hover .overlay {
+        opacity: 1;
+    }
+
+    /* social icon  */
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 60px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+
+    .fa-google {
+        background: #dd4b39;
+        color: white;
+    }
+
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+    }
+
+    .fa-instagram {
+        background: #cb2027;
+        color: white;
+    }
+
+    .socialIcon {
+        font-size: 30px;
+    }
+
+
+    /* making responsive */
+    @media screen and (max-width: 500px) {
+        .scrollmenu.responsive {
+            position: relative;
+        }
+
+        .scrollmenu.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .scrollmenu.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+
+        .pics {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- logo -->
+        <div class="left">
+            <img src="logo white.png" alt="logo">
+        </div>
+
+        <!-- this is navigation bar  -->
+        <div class="right">
+            <ul class="navbar">
+                <li class="menu-active"><a href="#hero">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#portfolio">Events</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Summer Trekking</h2>
+        </div>
+
+        <div class="container">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, quis. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Magnam iusto ratione quam blanditiis ipsa obcaecati accusamus voluptate
+                sit officia. Adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero aspernatur nobis
+                similique libero aliquid, incidunt voluptatibus repellendus! Reiciendis, temporibus rem.</p>
+        </div>
+        <!-- Photos -->
+        <div class="row">
+            <h2>Previous Summer Treks</h2>
+        </div>
+        <div class="pics">
+            <img src="pangarchula.jpg" alt="" class="image">
+            <div class="overlay">pangarchula Trek</div>
+            <img src="baraadsar Lake Trek.jpg" alt="" class="image">
+            <div class="overlay">baraadsar Lake Trek</div>
+            <img src="kareri lake trek.jpg" alt="" class="image">
+            <div class="overlay">Kareri Lake Trek</div>
+        </div>
+
+        <!-- reviews -->
+        <div class="row">
+            <h2>Experiences</h2>
+        </div>
+        <div class="reviews">
+            <h2></h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, quis. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Magnam iusto ratione quam blanditiis ipsa obcaecati accusamus voluptate
+                sit officia. Adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero aspernatur nobis
+                similique libero aliquid, incidunt voluptatibus repellendus! Reiciendis, temporibus rem.
+            <h3>-xyz1</h3>
+            </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, quis. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Magnam iusto ratione quam blanditiis ipsa obcaecati accusamus voluptate
+                sit officia. Adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero aspernatur nobis
+                similique libero aliquid, incidunt voluptatibus repellendus! Reiciendis, temporibus rem.
+            <h3>-xyz2</h3>
+            </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, quis. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Magnam iusto ratione quam blanditiis ipsa obcaecati accusamus voluptate
+                sit officia. Adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero aspernatur nobis
+                similique libero aliquid, incidunt voluptatibus repellendus! Reiciendis, temporibus rem.
+            <h3>-xyz3</h3>
+            </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, quis. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Magnam iusto ratione quam blanditiis ipsa obcaecati accusamus voluptate
+                sit officia. Adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero aspernatur nobis
+                similique libero aliquid, incidunt voluptatibus repellendus! Reiciendis, temporibus rem.
+            <h3>-xyz4</h3>
+            </p>
+
+        </div>
+
+    </header>
+    <!-- social-icon -->
+    <div class="socialIcon">
+        <center>
+            <h2> Social media </h2>
+
+            <!-- Add font awesome icons -->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </center>
+    </div>
+    <script>
+
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>
